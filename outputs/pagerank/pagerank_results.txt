@@ -1,0 +1,16 @@
+
+PageRank Results - Full Graph (whole.txt)
+==========================================
+Top 5 nodes:
+Node 263: 0.002020
+Node 537: 0.001943
+Node 965: 0.001925
+Node 243: 0.001853
+Node 285: 0.001827
+
+Bottom 5 nodes:
+Node 408: 0.000388
+Node 424: 0.000355
+Node 62:  0.000353
+Node 93:  0.000351
+Node 558: 0.000329
