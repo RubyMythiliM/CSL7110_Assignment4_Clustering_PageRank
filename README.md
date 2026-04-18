@@ -1,79 +1,157 @@
-# CSL7110 - Machine Learning with Big Data
-## Assignment 4: Clustering and PageRank
+# 🚀 CSL7110 – Machine Learning with Big Data
 
-**Student:** Ruby Mythili M
-**Roll Number:** M25DE1006
-**Course:** CSL7110 - ML with Big Data
-**Institute:** IIT Jodhpur
+## Assignment 4: Clustering • Web Search • PageRank
 
----
+👩‍💻 **Author:** Ruby Mythili M
 
-## 📌 Overview
+🎓 **Roll Number:** M25DE1006
 
-This assignment covers three major topics:
+🏫 **Institute:** IIT Jodhpur
 
-1. **Part 1 - Clustering:** Farthest First (k-center) and K-Means++ algorithms on the UCI Spam dataset
-2. **Part 2 - Web Search:** Building an Inverted Index and TF-IDF based Search Engine
-3. **Part 3 - PageRank:** Implementing the PageRank algorithm using Apache Spark
 
 ---
 
-## 📁 Repository Structure
+## ✨ Project Overview
+
+This repository presents the implementation of core large-scale data processing concepts through three independent modules:
+
+* 🔹 **Clustering Algorithms** – Farthest First (k-center) and K-Means++
+* 🔹 **Search Engine Design** – Inverted Index with TF-IDF ranking
+* 🔹 **Graph Analytics** – PageRank using Apache Spark
+
+The focus of this work is not just implementation, but understanding how these algorithms behave on real-world scale data.
+
+---
+
+## 🧠 Key Highlights
+
+* Implemented clustering algorithms **from scratch** and analyzed their performance
+* Built a **mini search engine pipeline** including indexing and ranking
+* Designed a **distributed PageRank system** using Spark RDDs
+* Worked with **real datasets** (UCI Spam, web documents, graph data)
+* Structured outputs and experiments for **clear reproducibility**
+
+---
+
+## 📂 Repository Structure
+
+```bash
 CSL7110_Assignment4_Clustering_PageRank/
 │
-
-│
 ├── data/
-│   ├── clustering/       # UCI Spam dataset (spambase.data)
-│   ├── websearch/        # Webpages, actions.txt, answers.txt
-│   └── pagerank/         # whole.txt and small.txt graph files
+│   ├── clustering/        # UCI Spambase dataset
+│   ├── websearch/         # Web documents and queries
+│   └── pagerank/          # Graph datasets
 │
-├── notebooks/            # Jupyter notebooks for all 3 parts
-│
-├── src/                  # Helper Python scripts
+├── notebooks/             # Implementation notebooks
+├── src/                   # Utility scripts
 │
 ├── outputs/
-│   ├── clustering/       # Clustering results and plots
-│   ├── websearch/        # Search engine outputs
-│   └── pagerank/         # PageRank scores
+│   ├── clustering/        # Results and plots
+│   ├── websearch/         # Ranked outputs
+│   └── pagerank/          # Node rankings
 │
-├── report/               # Final PDF report
-│
-├── requirements.txt      # Required Python libraries
+├── report/                # Final report (PDF)
+├── requirements.txt
 └── .gitignore
+```
+
 ---
 
-## 🛠️ Setup Instructions
+## ⚙️ Getting Started
 
-1. Clone this repository:
+```bash
+# Clone the repository
 git clone https://github.com/RubyMythiliM/CSL7110_Assignment4_Clustering_PageRank.git
-2. Install dependencies:
-pip install -r requirements.txt
 
-3. Open notebooks in Google Colab or Jupyter
+# Install dependencies
+pip install -r requirements.txt
+```
+
+Run the notebooks using **Jupyter Notebook** or **Google Colab**.
 
 ---
 
-## 📊 Parts Summary
+## 📊 Implementation Details
 
-### Part 1: Clustering
-- Dataset: UCI Spambase (4601 points, 58 dimensions)
-- Algorithms: Farthest First Traversal, K-Means++
-- Objective: Compare clustering quality using k-means objective function
+### 🔹 Part 1: Clustering
 
-### Part 2: Web Search
-- Built a custom Inverted Index from scratch
-- Implemented TF-IDF scoring for search relevance
-- Tested against provided actions.txt and answers.txt
+* Dataset: **UCI Spambase** (4601 samples, 58 features)
+* Algorithms:
 
-### Part 3: PageRank
-- Graph: 1000 nodes, 8192 edges
-- Algorithm: Iterative PageRank with β = 0.8, 40 iterations
-- Implemented using Apache Spark RDDs
+  * Farthest First Traversal (k-center)
+  * K-Means++
+* Evaluation: k-means objective function
+
+👉 Focus: Understanding initialization impact and cluster quality
+
+---
+
+### 🔹 Part 2: Web Search Engine
+
+* Built an **Inverted Index** for document retrieval
+* Implemented **TF-IDF scoring** for ranking relevance
+* Validated results using provided query-answer pairs
+
+👉 Focus: How real search engines rank documents
+
+---
+
+### 🔹 Part 3: PageRank (Apache Spark)
+
+* Graph: **1000 nodes, 8192 edges**
+* Damping factor: **β = 0.8**
+* Iterations: **40**
+* Framework: **Spark RDDs**
+
+👉 Focus: Scalable graph processing and iterative computation
+
+---
+
+## 📈 Results & Outputs
+
+* Clustering performance comparison plots
+* Ranked search results for given queries
+* Final PageRank scores for graph nodes
+
+All outputs are available in the `outputs/` directory.
 
 ---
 
 ## 📄 Report
 
-The final report is available in the `report/` folder.
+A detailed explanation of methodology, assumptions, and observations is included in:
+
+```
+report/
+```
+
+---
+
+## 💡 Learning Outcome
+
+This assignment helped in understanding how core data engineering concepts like:
+
+* **Data partitioning**
+* **Distributed computation**
+* **Search indexing**
+* **Iterative graph algorithms**
+
+are applied in real systems.
+
+---
+
+## 🔗 GitHub
+
+👉 [https://github.com/RubyMythiliM/CSL7110_Assignment4_Clustering_PageRank](https://github.com/RubyMythiliM/CSL7110_Assignment4_Clustering_PageRank)
+
+---
+
+## 👩‍🎓 Author
+
+**Ruby Mythili**
+M.Tech – Data Engineering
+IIT Jodhpur
+
+---
 
